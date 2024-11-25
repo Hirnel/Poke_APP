@@ -1,0 +1,12 @@
+
+.header {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 200px; // Tamaño máximo para el logo
+  height: auto; // Ajusta automáticamente la altura
+}

@@ -1,0 +1,55 @@
+/* styles.scss */
+.pokemon-details {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  margin: 16px auto;
+  max-width: 400px;
+}
+
+.pokemon-details h1 {
+  text-transform: capitalize;
+}
+
+.pokemon-details img {
+  display: block;
+  margin: 16px auto;
+  width: 150px;
+  height: 150px;
+}
+
+.pokemon-details .type {
+  display: inline-block;
+  padding: 4px 8px;
+  margin: 4px;
+  border-radius: 4px;
+  color: white;
+}
+
+.pokemon-details .type.grass {
+  background-color: #78c850;
+}
+
+.pokemon-details .type.poison {
+  background-color: #a040a0;
+}
+
+.button-SEE-MORE {
+  margin-top: auto; // Empuja el botón hacia la parte inferior
+  margin-left: auto;
+  margin-right: auto; // Asegura el centrado horizontal
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block; // Garantiza que el botón ocupe una línea propia
+  
+  &:hover {
+    background-color: $secondary-color; // Efecto hover
+  }
+}
+/* Agrega más estilos para otros tipos */

@@ -1,0 +1,67 @@
+.pokedex-container {
+    position: relative; /* Necesario para posicionar la barra encima */
+    text-align: center;
+    margin-bottom: 20px;
+    
+  }
+  
+  .pokedex-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain; /* Asegura que la imagen se ajuste bien */
+  }
+  
+  .search-bar-overlay { //Si no pongo esto no sabia como moverlo para que esté justo encima
+    position: absolute;
+    top: 40%; 
+    left: 75%;
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+    
+  }
+  
+  .pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+  }
+  
+  .pokemon-list p {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /////////////////////////////////////
+  .search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar-input {
+    width: 195px; /* Ajusta el ancho del buscador */
+    height: 45px; /* Ajusta la altura */
+    font-size: 18px; /* Tamaño de la letra */
+    color: #ffffff; /* Color del texto */
+    background-color: #333333; /* Fondo del buscador */
+    border: 2px solid #000000; /* Borde del buscador */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle un efecto */
+    outline: none; /* Quita el borde azul al hacer clic */
+    transition: all 0.3s ease; /* Animación para hover y focus */
+  }
+  
+  .search-bar-input::placeholder {
+    color: #bbbbbb; /* Color del texto placeholder */
+  }
+  
+  .search-bar-input:focus {
+    background-color: #acabab; /* Fondo al hacer clic */
+    color: #ffffff; /* Color del texto al hacer clic */
+    border-color: #000000; /* Borde al hacer clic */
+  }
+  
